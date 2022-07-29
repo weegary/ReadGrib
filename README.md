@@ -75,6 +75,10 @@ using (GribFile file = new GribFile(file_name))
 - iScansPositively 經度間距是否為正值
 - jScansPositively 緯度間距是否為正值
 
+Remarks: Some of the keys of grid information can be found at ECMWF's website.
+- [Grid1:Mercator](https://apps.ecmwf.int/codes/grib/format/grib1/grids/1/)
+- [Grid3:Lambert conformal](https://apps.ecmwf.int/codes/grib/format/grib1/grids/3/)
+
 Therefore, we can calculate the location of each grid. And ```msg.Values(out rawValues)``` can be used to extract the readings of certain paramter.
 ```C#
 DataTable dt = new DataTable();
